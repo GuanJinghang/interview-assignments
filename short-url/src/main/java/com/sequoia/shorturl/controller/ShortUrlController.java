@@ -34,6 +34,8 @@ public class ShortUrlController {
     @GetMapping
     public String test() {
         System.out.println(properties.getCacheCapacity());
+        System.out.println(properties.getExpireDuration());
+        System.out.println(properties.getExpireUnit().getClass());
         return "lalala";
     }
 }
